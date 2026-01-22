@@ -1,4 +1,4 @@
-Absolutely! Here’s a **professional README.md** for your `sabear_customerapp` project, customized with your name and ready for CI/CD with Jenkins:
+
 
 ---
 
