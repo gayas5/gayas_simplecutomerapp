@@ -1,23 +1,21 @@
-
-
----
+Here’s a **ready‑to‑use `README.md`** for your GitHub repository at **[https://github.com/gayas5/gayas_simplecutomerapp](https://github.com/gayas5/gayas_simplecutomerapp)** that reflects your project structure and CI/CD setup:
 
 ```markdown
 # Sabear Customer App
 
 **Author:** Gayas  
 **Package:** `com.gayas`  
-**Branch:** `feature-1.1`  
+**Repository:** https://github.com/gayas5/gayas_simplecutomerapp
 
-A simple Java-based customer application built with **Maven**, ready for **CI/CD using Jenkins**.
+A simple Java customer application built with **Maven** and configured for **CI/CD using Jenkins**.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 
-sabear_customerapp/
+gayas_simplecutomerapp/
 ├─ src/
 │  ├─ main/java/com/gayas/App.java
 │  ├─ main/resources/
@@ -31,60 +29,61 @@ sabear_customerapp/
 - **Main Class:** `App.java`  
 - **Test Class:** `AppTest.java`  
 - **Build Tool:** Maven  
-- **CI/CD:** Jenkins Declarative Pipeline  
+- **CI/CD:** Jenkins Declarative Pipeline
 
 ---
 
-## Prerequisites
+## 🔧 Prerequisites
 
-- Java 11+
-- Maven 3+ (`M3` configured in Jenkins)
-- Jenkins (with Maven and JDK installed)
+Before building or running:
+
+- Java JDK 11 or higher  
+- Maven 3.x  
 - Git  
+- Jenkins (with Maven and JDK configured)  
 
 ---
 
-## Maven Commands
+## 🚀 Maven Build Commands
 
-- **Compile and build:**
+Use these commands locally:
 
-```bash
-mvn clean install
+- **Build & compile the project**  
+  ```bash
+  mvn clean install
 ````
 
-* **Run tests only:**
+* **Run tests**
 
-```bash
-mvn test
-```
+  ```bash
+  mvn test
+  ```
 
-* **Build and skip tests:**
+* **Build and skip tests**
 
-```bash
-mvn clean install -DskipTests
-```
+  ```bash
+  mvn clean install -DskipTests
+  ```
 
-* **Package the app:**
+* **Create package**
 
-```bash
-mvn package
-```
+  ```bash
+  mvn package
+  ```
 
 ---
 
-## Jenkins Pipeline
+## 🧠 Jenkins CI/CD Pipeline
 
-The project includes a **Declarative Jenkinsfile** for CI/CD:
+This project includes a **Declarative Jenkinsfile** that:
 
-### Features:
+✔ Checks out source code from Git
+✔ Builds using Maven
+✔ Runs tests (optional)
+✔ Packages the application
+✔ Has placeholder for deployment stages
 
-* Checkout the code from GitHub (`feature-1.1` branch)
-* Build with Maven
-* Optional skipping of unit tests
-* Packaging the application
-* Deployment placeholder for `dev`, `qa`, or `prod` environments
-
-### Build Parameters:
+### ⚙ Build Parameters
 
 | Parameter    | Type    | Default     | Description             |
 | ------------ | ------- | ----------- | ----------------------- |
@@ -94,45 +93,49 @@ The project includes a **Declarative Jenkinsfile** for CI/CD:
 
 ---
 
-## How to Run
+## 📌 How to Run
 
 1. Clone the repository:
 
-```bash
-git clone -b feature-1.1 https://github.com/betawins/sabear_simplecutomerapp.git
-cd sabear_simplecutomerapp
-```
+   ```bash
+   git clone https://github.com/gayas5/gayas_simplecutomerapp.git
+   cd gayas_simplecutomerapp
+   ```
 
 2. Build with Maven:
 
-```bash
-mvn clean install
-```
+   ```bash
+   mvn clean install
+   ```
 
 3. Run tests:
 
-```bash
-mvn test
-```
+   ```bash
+   mvn test
+   ```
 
-4. Push changes and trigger Jenkins build.
-
----
-
-## Notes
-
-* Ensure Maven tool in Jenkins is named `M3`
-* Ensure JDK in Jenkins is named `JDK11`
-* Deployment stage is currently a placeholder; add your Docker/k8s scripts there.
+4. Open Jenkins and configure a pipeline job pointing to this repo and branch.
 
 ---
 
-## License
+## 💡 Notes
+
+* Make sure **Maven tool** in Jenkins is named `M3`
+* Make sure **JDK** in Jenkins is named `JDK11`
+* Deployment logic can be added under the `Deploy` stage in the `Jenkinsfile`
+
+---
+
+## 📄 License
 
 MIT License © Gayas
 
 ```
 
+This README will show up automatically on your GitHub repo’s main page and helps others (and future you!) understand the project, how to build it, and how CI/CD works with Jenkins. :contentReference[oaicite:0]{index=0}
+
 ---
 
-
+Want me to help you **add badges** (like build status, Maven Central, test coverage) to this README too? That can make it look even more professional! 🚀
+::contentReference[oaicite:1]{index=1}
+```
